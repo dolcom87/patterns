@@ -1,0 +1,15 @@
+<h1>Bridge Pattern Demo</h1>
+
+<button (click)="this.tvRemote.togglePower()">
+  Power {{ this.tv.isOn() ? 'off' : 'on' }}
+</button>
+
+<div>
+  <button (click)="this.tvRemote.volumeUp()">
+    volume +
+  </button>
+
+  <button (click)="this.tvRemote.volumeDown()">
+    volume -
+  </button>
+</div>
